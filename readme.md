@@ -12,5 +12,5 @@ I developed this script to see if we can use machine learning to predict stock p
 - Run the data miner, `python historicaldatagetter.py`
    This uses the saved stocklist, to retrieve the daily historical data containing opening and closing stock prices for each company, as well as the high and low prices. This will output the data to csv files in the historical data folder with the corresponding company name for its filename.
 
-# TODO
+## TODO
 - Automate scraping of stock list from edge.
