@@ -8,7 +8,7 @@ for i in range(1,6):
     fname = 'stocklist%s' % i
     with open(fname, 'r') as f:
         lines = f.read()
-        regex = ur"<td><a href=\"#company\" onclick=\"cmDetail\(\'(\d+)\',\'(\d+)\'\);return false;\">(.*)\<\/a><\/td>"
+        regex = r"<td><a href=\"#company\" onclick=\"cmDetail\(\'(\d+)\',\'(\d+)\'\);return false;\">(.*)\<\/a><\/td>"
         m = re.findall(regex, lines)
         for match in m:
             stocks.append(match)
